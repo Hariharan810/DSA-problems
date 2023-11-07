@@ -1,0 +1,20 @@
+class Solution{
+   
+    static ArrayList<Integer> leaders(int arr[], int n){
+        ArrayList<Integer> al=new ArrayList<>();
+
+        int last=arr[arr.length-1];
+        al.add(last);
+
+        int i=arr.length-2;
+        while (i>=0){
+            if(arr[i]>=last){
+                last=arr[i];
+                al.add(arr[i]);
+            }
+            i--;
+        }
+        Collections.reverse(al);
+        return al;
+    }
+}
