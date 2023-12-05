@@ -1,0 +1,39 @@
+class Solution {
+    public List<String> letterCombinations(String digits) {
+        Map<Character,String> conversion =new HashMap<>();
+        List<String> resultList=new ArrayList<>();
+
+        conversion.put('2',"abc");
+        conversion.put('3',"def");
+        conversion.put('4',"ghi");
+        conversion.put('5',"jkl");
+        conversion.put('6',"mno");
+        conversion.put('7',"pqrs");
+        conversion.put('8',"tuv");
+        conversion.put('9',"wxyz");
+
+        if(digits== null || digits.length()==0){
+            return resultList;
+        }
+
+        backtracking(digits,resultList,conversion,0,new StringBuilder());
+        return resultList;
+    }
+    private void backtracking(String digits, List<String> resultList,Map<Character,String>  result, int curIndex, StringBuilder curCombination) {
+
+        if(curIndex==digits.length()){
+            resultList.add(curCombination.toString());
+            return;
+        }
+
+        char curNum=digits.charAt(curIndex);
+        String curString=result.get(curNum);
+
+        for (int i = 0; i < curString.length(); i++) {
+                char letter = curString.charAt(i);
+                curCombination.append(letter);
+                backtracking(digits, resultList, result, curIndex + 1, curCombination);
+                curCombination.deleteCharAt(curCombination.length() - 1);
+            }
+    }
+}
