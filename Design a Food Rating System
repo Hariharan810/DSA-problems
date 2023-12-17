@@ -1,58 +1,38 @@
 class FoodRatings {
-    Map<String, TreeSet<Food>> cuisineMap;
-    Map<String, Food> foodMap;
-
+    HashMap<String, TreeSet<Food>> hm;
+    HashMap<String, Food> cat;
     public FoodRatings(String[] foods, String[] cuisines, int[] ratings) {
-        foodMap = new HashMap<>();
-        cuisineMap = new HashMap<>();
-
-        for (int i = 0; i < foods.length; ++i) {
-            Food food = new Food(foods[i], cuisines[i], ratings[i]);
-            foodMap.put(food.name, food);
-            
-            cuisineMap.computeIfAbsent(food.cuisine, k -> new TreeSet<>(Comparator
-                    .comparing(Food::getRating).reversed()
-                    .thenComparing(Food::getName)));
-            cuisineMap.get(food.cuisine).add(food);
+        hm = new HashMap<>();
+        cat = new HashMap<>();
+        for(int i = 0; i < foods.length; i++){
+            hm.putIfAbsent(cuisines[i], new TreeSet<>((a,b) -> b.rating == a.rating ? a.food.compareTo(b.food) : b.rating - a.rating));
+            hm.get(cuisines[i]).add(new Food(ratings[i], cuisines[i], foods[i]));
+            cat.put(foods[i], new Food(ratings[i], cuisines[i], foods[i]));
         }
     }
-
-    public void changeRating(String foodName, int newRating) {
-        Food food = foodMap.get(foodName);
-        if (food != null) {
-            TreeSet<Food> foodSet = cuisineMap.get(food.cuisine);
-            foodSet.remove(food);
-            food.setRating(newRating);
-            foodSet.add(food);
-        }
+    
+    public void changeRating(String food, int newRating) {
+        Food tempFood = cat.get(food);
+        cat.remove(food);
+        hm.get(tempFood.cuisine).remove(tempFood);
+        Food newFood = new Food(newRating, tempFood.cuisine, food);
+        hm.get(newFood.cuisine).add(newFood);
+        cat.put(food, newFood);
     }
-
+    
     public String highestRated(String cuisine) {
-        TreeSet<Food> foodSet = cuisineMap.get(cuisine);
-        return foodSet.first().getName();
-    }
-}
-
-class Food {
-    String name;
-    String cuisine;
-    int rating;
-
-    public Food(String name, String cuisine, int rating) {
-        this.name = name;
-        this.rating = rating;
-        this.cuisine = cuisine;
+         return hm.get(cuisine).first().food;
     }
 
-    public String getName() {
-        return name;
-    }
+    class Food{
+        int rating;
+        String cuisine;
+        String food;
 
-    public int getRating() {
-        return rating;
-    }
-
-    public void setRating(int rating) {
-        this.rating = rating;
+        public Food(int rating, String cuisine, String food){
+            this.rating = rating;
+            this.cuisine = cuisine;
+            this.food = food;
+        }
     }
 }
