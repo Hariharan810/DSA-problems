@@ -1,0 +1,23 @@
+class Solution {
+    private final int MOD = (int)Math.pow(10,9)+7;
+
+    public int numRollsToTarget(int n, int k, int target) {
+        if (target > n * k) return 0;
+        int[][] dp = new int[n + 1][target + 1];
+        for (int[] row : dp) Arrays.fill(row, -1);
+        return solve(n, k, target, dp);
+    }
+
+    private int solve(int n, int k, int sum, int[][] dp) {
+        if (n == 0) return sum == 0 ? 1 : 0;
+        if (sum < 0) return 0;
+        if (dp[n][sum] != -1) return dp[n][sum];
+        
+        int count = 0;
+        for (int face = 1; face <= k; face++) 
+            if(sum - face >= 0)
+                count = (count + solve(n - 1, k, sum - face, dp)) % MOD;
+        
+        return dp[n][sum] = count;
+    }
+}
