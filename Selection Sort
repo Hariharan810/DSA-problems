@@ -1,0 +1,23 @@
+Coding Ninjas : https://www.codingninjas.com/studio/problems/selection-sort_624469
+
+import java.util.Arrays;
+public class Solution {
+    public static void selectionSort(int[] arr) {
+        //Your code goes here
+        
+        for (int i = 0; i < arr.length; i++) {
+            int max=0;
+            for (int j = 0; j < arr.length-i; j++) {
+                if(arr[j]>arr[max]){
+                    max=j;                
+                }
+                swap(arr,max,arr.length-i-1);
+            }
+        }
+    }
+    public static void swap(int[] arr,int first,int second){
+        int temp=arr[first];
+        arr[first]=arr[second];
+        arr[second]=temp;
+    }
+}
