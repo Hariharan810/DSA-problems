@@ -1,0 +1,46 @@
+Coding Ninjas
+Problem Link : https://www.codingninjas.com/studio/problems/sorted-array_6613259
+
+
+import java.util.*;
+
+public class Solution {
+
+    public static List<Integer> sortedArray(int[] a, int[] b) {
+
+        ArrayList<Integer> union = new ArrayList<>();
+        int i = 0;
+        int j = 0;
+        int n = a.length;
+        int m = b.length;
+        while (i < n && j < m) {
+            if (a[i] <= b[j]) {
+                addUnique(union, a[i]);
+                i++;
+            } else {
+                addUnique(union, b[j]);
+                j++;
+            }
+
+        }
+        while (i < n) {
+            addUnique(union, a[i]);
+            i++;
+        }
+        while (j < m) {
+            addUnique(union, b[j]);
+            j++;
+        }
+        return union;
+
+    }
+
+ 
+
+    private static void addUnique(List<Integer> list, int num) {
+
+        if (list.size() == 0 || list.get(list.size() - 1) != num) {
+            list.add(num);
+        }
+    }
+}
