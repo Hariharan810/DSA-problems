@@ -1,0 +1,29 @@
+Coding Ninjas
+Problem Link : https://www.codingninjas.com/studio/problems/square-root-integral_893351
+
+import java.util.* ;
+import java.io.*; 
+
+public class Solution {
+
+	public static int sqrtN(long N) {
+		long start=0;
+		long end=N;
+
+		while(start<=end){
+
+			long mid=(start+end)/2;
+
+			if(mid*mid==N){
+				return (int)mid;
+			}	
+			else if(mid*mid<N){
+				start=mid+1;
+			}
+			else{
+				end=mid-1;
+			}
+		}
+		return (int)end;
+	}
+}
