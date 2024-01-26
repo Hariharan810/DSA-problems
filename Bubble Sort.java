@@ -1,5 +1,5 @@
-Coding Ninjas 
-Problem Link:https://www.codingninjas.com/studio/problems/bubble-sort_624380
+//Coding Ninjas 
+//Problem Link:https://www.codingninjas.com/studio/problems/bubble-sort_624380
 
 public class Solution {
     public static void bubbleSort(int[] arr, int n) {
