@@ -1,5 +1,5 @@
-Coding Ninjas
-Problem Link : https://www.codingninjas.com/studio/problems/binary-search_972
+//Coding Ninjas
+//Problem Link : https://www.codingninjas.com/studio/problems/binary-search_972
 
 public class Solution {
     public static int search(int []nums, int target) {
