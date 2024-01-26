@@ -1,5 +1,5 @@
-LeetCode
-Problem Link : https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/
+//LeetCode
+//Problem Link : https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/
 
 class Solution {
     public int amountOfTime(TreeNode root, int start) {
