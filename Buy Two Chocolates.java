@@ -1,3 +1,6 @@
+//LeetCode
+//Problem Link : https://leetcode.com/problems/buy-two-chocolates/
+
 class Solution {
     public int buyChoco(int[] arr, int key) {
 
