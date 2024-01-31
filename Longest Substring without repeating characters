@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int lengthOfLongestSubstring(String s) {
         HashMap<Character,Integer> map=new HashMap<>();
         int n=s.length();

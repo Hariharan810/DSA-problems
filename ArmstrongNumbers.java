@@ -1,4 +1,4 @@
-class Solution {
+class ArmstrongNumbers {
     static String armstrongNumber(int n){
         int num=n;
         int sum=0;

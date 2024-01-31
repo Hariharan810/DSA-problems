@@ -2,7 +2,7 @@
 //Problem Link : https://www.codingninjas.com/studio/problems/allocate-books_1090540
 
 import java.util.*;
-public class Solution {
+public class AllocateBooks {
     public static int findPages(ArrayList<Integer> arr, int n, int m) {
         // Write your code here.
         if(m>n){

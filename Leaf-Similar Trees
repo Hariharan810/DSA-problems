@@ -12,7 +12,7 @@ class TreeNode {
     }
 }
 
-class Solution {
+class ThreeSumCloset {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
         List<Integer> s1 = getSequence(root1);
         List<Integer> s2 = getSequence(root2);

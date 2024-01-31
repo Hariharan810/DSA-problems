@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int[][] imageSmoother(int[][] img) {
         int row=img.length;
         int col=img[0].length;

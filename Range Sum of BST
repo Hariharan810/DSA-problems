@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/range-sum-of-bst/
 
-class Solution {
+class ThreeSumCloset {
     public int rangeSumBST(TreeNode root, int low, int high) {
         if (root == null) {
             return 0;

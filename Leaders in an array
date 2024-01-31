@@ -1,4 +1,4 @@
-class Solution{
+class ThreeSumCloset{
    
     static ArrayList<Integer> leaders(int arr[], int n){
         ArrayList<Integer> al=new ArrayList<>();

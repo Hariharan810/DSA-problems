@@ -2,7 +2,7 @@ LeetCode
 Problem Link : https://www.codingninjas.com/studio/problems/longest-subarray-with-zero-sum_6783450
 
 import java.util.*;
-public class Solution {
+public class ThreeSumCloset {
     public static int getLongestZeroSumSubarrayLength(int []arr){
         // Write your code here.
         HashMap<Integer, Integer> mpp = new HashMap<Integer, Integer>();

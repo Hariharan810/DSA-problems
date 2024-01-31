@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/next-permutation/
 
-class Solution {
+class ThreeSumCloset {
     public void nextPermutation(int[] nums) {
         int index=-1;
         int n=nums.length;

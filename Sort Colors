@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public void sortColors(int[] nums) {
         int low=0;
         int mid=0;

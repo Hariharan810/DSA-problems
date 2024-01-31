@@ -1,4 +1,4 @@
-class Solution
+class ThreeSumCloset
 {
     public int find_median(int[] v)
     {

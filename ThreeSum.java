@@ -1,8 +1,10 @@
+
+
 //LeetCode Link : https://leetcode.com/problems/3sum/
 
 import java.util.*;
 
-class Solution {
+class ThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         Set<List<Integer> > result = new HashSet<>();
 
@@ -36,8 +38,8 @@ class Solution {
     }
 }
 
-Approach 2
-class Solution {
+//Approach 2
+class ThreeSum2 {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> result=new ArrayList<>();

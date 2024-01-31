@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
 
-class Solution {
+class ThreeSumCloset {
     public int smallestDivisor(int[] nums, int threshold) {
         
         int n=nums.length;

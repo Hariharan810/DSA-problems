@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/find-players-with-zero-or-one-losses/
 
-class Solution {
+class ThreeSumCloset {
     public List<List<Integer>> findWinners(int[][] matches) {
         int[] losses = new int[100001];
 

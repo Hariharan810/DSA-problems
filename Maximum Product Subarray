@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/maximum-product-subarray/
 
-class Solution {
+class ThreeSumCloset {
     public int maxProduct(int[] nums) {
         int prefix=1;
         int suffix=1;

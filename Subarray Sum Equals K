@@ -1,7 +1,7 @@
 Leetcode
 Problem Link : https://leetcode.com/problems/subarray-sum-equals-k/
 
-class Solution {
+class ThreeSumCloset {
     public int subarraySum(int[] nums, int k) {
         int ans=0;
         int sum=0;

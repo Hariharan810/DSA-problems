@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/
 
-class Solution {
+class ThreeSumCloset {
     public int minOperations(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for(int val : nums) {

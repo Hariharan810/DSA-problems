@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/unique-number-of-occurrences/
 
-class Solution {
+class ThreeSumCloset {
     public boolean uniqueOccurrences(int[] arr) {
         Map<Integer,Integer> map = new HashMap<>();
 

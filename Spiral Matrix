@@ -1,7 +1,7 @@
 Leetcode
 Peoblem Link : https://leetcode.com/problems/spiral-matrix/
 
-class Solution {
+class ThreeSumCloset {
     public List<Integer> spiralOrder(int[][] matrix) {
         int m=matrix.length;
         int n=matrix[0].length;

@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> tempList=new ArrayList<>();

@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public boolean makeEqual(String[] words) {
         
         final int[] characterCount = new int[26];

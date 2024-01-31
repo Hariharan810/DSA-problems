@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/sum-of-subarray-minimums/
 
-class Solution {
+class ThreeSumCloset {
     public int sumSubarrayMins(int[] arr) {
         final int MOD = 1000000007;
         Stack<Integer> st = new Stack<>();

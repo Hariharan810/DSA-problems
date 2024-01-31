@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
      public boolean isHappy(int n) {
 
         HashSet<Integer> hashSet = new HashSet<>();

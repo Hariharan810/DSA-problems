@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/rotate-array/
 
-class Solution {
+class ThreeSumCloset {
     public void rotate(int[] nums, int k) {
         int n=nums.length-1;
         k=k%nums.length;

@@ -1,6 +1,10 @@
 //LeetCode Link : https://leetcode.com/problems/4sum/
 
-class Solution {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class FourSum {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         int n = nums.length;
         List<List<Integer>> ans = new ArrayList<>();

@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int minDifficulty(int[] jobDifficulty, int d) {
         if (jobDifficulty.length < d) {
             return -1;

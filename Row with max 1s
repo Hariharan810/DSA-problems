@@ -2,7 +2,7 @@ Coding Ninjas
 Problem Link : https://www.codingninjas.com/studio/problems/row-of-a-matrix-with-maximum-ones_982768
 
 import java.util.ArrayList;
-public class Solution
+public class ThreeSumCloset
 {
     public static int maximumOnesRow(ArrayList<ArrayList<Integer>> matrix, int n, int m)
     {

@@ -3,7 +3,7 @@
 
 import java.util.Arrays;
 
-public class Solution {
+public class AggressiveCows {
     public static int aggressiveCows(int []stalls, int k) {
         
         Arrays.sort(stalls);

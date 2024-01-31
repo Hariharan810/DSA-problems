@@ -10,7 +10,7 @@ class TreeNode {
     }
 }
 
-public class Solution {
+public class ThreeSumCloset {
     public int maxAncestorDiff(TreeNode root) {
         int[] m = {0};
         dfs(root, m);

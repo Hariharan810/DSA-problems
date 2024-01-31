@@ -4,7 +4,7 @@ Problem Link : https://www.codingninjas.com/studio/problems/sorted-array_6613259
 
 import java.util.*;
 
-public class Solution {
+public class ThreeSumCloset {
 
     public static List<Integer> sortedArray(int[] a, int[] b) {
 

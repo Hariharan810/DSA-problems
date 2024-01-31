@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/
 
-class Solution {
+class ThreeSumCloset {
     public int minSteps(String s, String t) {
         Map<Character, Integer> smp = new HashMap<>();
         Map<Character, Integer> tmp = new HashMap<>();

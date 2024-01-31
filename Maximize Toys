@@ -1,4 +1,4 @@
-class Solution{
+class ThreeSumCloset{
     static int toyCount(int N, int K, int arr[])
     {
         Arrays.sort(arr);

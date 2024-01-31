@@ -1,7 +1,9 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/3sum-closest/ 
 
-class Solution {
+import java.util.Arrays;
+
+class ThreeSumCloset {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
          

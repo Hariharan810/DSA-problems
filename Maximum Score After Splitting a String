@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int maxScore(String s) {
         int max=Integer.MIN_VALUE;
         for (int i = 1; i < s.length(); i++) {

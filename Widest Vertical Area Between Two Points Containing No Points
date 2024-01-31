@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int maxWidthOfVerticalArea(int[][] points) {
         int max=0;
         int n=points.length;

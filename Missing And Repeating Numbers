@@ -4,7 +4,7 @@ Problem Link : https://www.codingninjas.com/studio/problems/missing-and-repeatin
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution {
+public class ThreeSumCloset {
     public static int[] findMissingRepeatingNumbers(int []a) {
         // Write your code here
         int[] ans = new int[a.length+1];

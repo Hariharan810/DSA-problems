@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         StringBuilder concat1=concat(word1,new StringBuilder());
         StringBuilder concat2=concat(word2,new StringBuilder());

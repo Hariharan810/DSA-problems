@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
         Set<List<Integer>> uniquePermutations = new HashSet<>();

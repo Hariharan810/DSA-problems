@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, new Comparator<int[]>() {
             public int compare(int[] o1, int[] o2) {

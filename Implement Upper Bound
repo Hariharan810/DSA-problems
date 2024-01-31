@@ -1,7 +1,7 @@
 Coding Ninjas
 Problem Link : https://www.codingninjas.com/studio/problems/implement-upper-bound_8165383
 
-public class Solution {
+public class ThreeSumCloset {
     public static int upperBound(int []arr, int x, int n){
         // Write your code here.
         int start=0;

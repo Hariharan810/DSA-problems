@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public String largestGoodInteger(String num) {
         String ans="";
         for (int i = 2; i < num.length(); i++) {

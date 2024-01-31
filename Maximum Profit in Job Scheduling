@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/maximum-profit-in-job-scheduling/
 
-class Solution {
+class ThreeSumCloset {
     public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
         int numJobs = profit.length; // Number of jobs
         Job[] jobs = new Job[numJobs];

@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/house-robber/
 
-class Solution {
+class ThreeSumCloset {
     public int rob(int[] nums) {
         int rob = 0;
         int norob = 0;
@@ -17,7 +17,7 @@ class Solution {
 
 Approach 2
 
-class Solution {
+class ThreeSumCloset {
     public int rob(int[] nums) {
         if(nums.length==1){
             return nums[0];

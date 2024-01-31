@@ -1,4 +1,6 @@
-class Compute {
+import java.util.HashMap;
+
+class ArraySubsetofAnotherArray {
     public String isSubset( long a1[], long a2[], long n, long m) {
         boolean result = isSubset(a1, a2); 
         String finalResult;

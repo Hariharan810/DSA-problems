@@ -1,10 +1,12 @@
 //Leetcode 
 //Problem Link : https://leetcode.com/problems/arithmetic-slices-ii-subsequence/
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-class Solution {
+class ArithmeticSlicesIISubsequence {
     public int numberOfArithmeticSlices(int[] nums) {
         Map<Integer, List<Integer>> nums2mp = new HashMap<>();
         int len = nums.length;

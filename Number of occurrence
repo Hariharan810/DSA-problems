@@ -1,7 +1,7 @@
 Coding Ninjas
 Problem Link : https://www.codingninjas.com/studio/problems/occurrence-of-x-in-a-sorted-array_630456
 
-public class Solution {
+public class ThreeSumCloset {
     public static int count(int arr[], int n, int x) {
         //Your code goes here
         

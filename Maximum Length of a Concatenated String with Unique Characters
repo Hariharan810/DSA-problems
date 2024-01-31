@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/
 
-public class Solution {
+public class ThreeSumCloset {
     public int maxLength(List<String> arr) {
         int[] maxLength = {0};
         backTrack(arr, "", 0, maxLength);

@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int lengthOfLastWord(String s) {
         String s1=s.trim();
         int count=0;

@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/majority-element-ii/
 
-class Solution {
+class ThreeSumCloset {
     public List<Integer> majorityElement(int[] nums) {
 
         List<Integer> list=new ArrayList<>();

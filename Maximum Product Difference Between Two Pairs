@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int maxProductDifference(int[] nums) {
         int firstBig = 0;
         int secondBig = 0;

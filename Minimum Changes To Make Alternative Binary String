@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int minOperations(String s) {
         int countZero = 0;
         int countOne = 0;

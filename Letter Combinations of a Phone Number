@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public List<String> letterCombinations(String digits) {
         Map<Character,String> conversion =new HashMap<>();
         List<String> resultList=new ArrayList<>();

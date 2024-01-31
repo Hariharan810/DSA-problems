@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/minimum-falling-path-sum/
 
-class Solution {
+class ThreeSumCloset {
     public int minFallingPathSum(int[][] matrix) {
         int n = matrix.length;
         int m = matrix[0].length;

@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/maximum-subarray/
 
-class Solution {
+class ThreeSumCloset {
     public int maxSubArray(int[] nums) {
         int maxSum = Integer.MIN_VALUE;
         int currentSum = 0;

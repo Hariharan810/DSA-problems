@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int numSpecial (int[][] nums) {
         int result = 0;
         int [] columns = new int [nums[0].length];

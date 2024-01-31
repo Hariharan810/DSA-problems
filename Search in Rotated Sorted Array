@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int search(int[] nums, int target) {
         if (0 == nums.length) {
             return -1;
@@ -16,7 +16,7 @@ class Solution {
 
 Approach 2
 
-class Solution {
+class ThreeSumCloset {
     public int search(int[] nums, int target) {
         int start=0;
         int end=nums.length-1;

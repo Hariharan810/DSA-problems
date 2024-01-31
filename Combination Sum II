@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> list = new ArrayList<>();
         List<Integer> tempList =new ArrayList<>();

@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/set-matrix-zeroes/
 
-class Solution {
+class ThreeSumCloset {
     public void setZeroes(int[][] matrix) {
         int[] row=new int[matrix.length];
         int[] col=new int[matrix[0].length];

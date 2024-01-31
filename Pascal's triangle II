@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public List<Integer> getRow(int rowIndex) {
 
         List<Integer> curRow = new ArrayList<>();

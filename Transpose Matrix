@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int[][] transpose(int[][] matrix) {
         int row=matrix.length;
         int col=matrix[0].length;

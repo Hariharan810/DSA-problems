@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public boolean searchMatrix(int[][] arr, int key) {
         int n = arr.length;
         int m = arr[0].length;
@@ -25,7 +25,7 @@ class Solution {
 }
 
 // Imagining 2D array into 1D array
-class Solution {
+class ThreeSumCloset {
     public boolean searchMatrix(int[][] matrix, int target) {
         int rows = matrix.length;
         int cols = matrix[0].length;

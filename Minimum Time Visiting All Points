@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int minTimeToVisitAllPoints(int[][] points) {
        int time=0;
         for (int i = 1; i < points.length; i++) {

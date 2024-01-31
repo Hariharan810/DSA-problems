@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public String destCity(List<List<String>> paths) {
         Set<String> cities = new HashSet<>(); 
         for (List<String> path : paths) {

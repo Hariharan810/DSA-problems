@@ -1,7 +1,7 @@
 LeetCode
 Problem Link : https://leetcode.com/problems/rearrange-array-elements-by-sign/
 
-class Solution {
+class ThreeSumCloset {
     public int[] rearrangeArray(int[] nums) {
         int i = 0;
         int j = 1;

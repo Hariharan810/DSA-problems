@@ -1,4 +1,4 @@
-class Solution {
+class ThreeSumCloset {
     public int[] searchRange(int[] nums, int target) {
         int[] ans={-1,-1};
         int start=search(nums,target,true);

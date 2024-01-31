@@ -3,7 +3,7 @@ Problem Link : https://www.codingninjas.com/studio/problems/subarrays-with-xor-k
 
 import java.util.HashMap;
 
-public class Solution {
+public class ThreeSumCloset {
     public static int subarraysWithSumK(int []a, int b) {
         // Write your code here
         int count=0;
