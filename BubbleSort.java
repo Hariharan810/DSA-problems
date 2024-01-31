@@ -1,7 +1,7 @@
 //Coding Ninjas 
 //Problem Link:https://www.codingninjas.com/studio/problems/bubble-sort_624380
 
-public class Solution {
+public class BubbleSort {
     public static void bubbleSort(int[] arr, int n) {
         //Your code goes here
         for(int i=n-1;i>=0;i--){

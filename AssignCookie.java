@@ -1,6 +1,8 @@
 // LeetCode : https://leetcode.com/problems/assign-cookies/
 
-class Solution {
+import java.util.Arrays;
+
+class AssignCookie{
     public int findContentChildren(int[] g, int[] s) {
         
         Arrays.sort(g);

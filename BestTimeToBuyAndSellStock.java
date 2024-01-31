@@ -1,7 +1,7 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
-class Solution {
+class BestTimeToBuyAndSellStock {
     public int maxProfit(int[] prices) {
         int minValue=Integer.MAX_VALUE;
         int maxValue=0;

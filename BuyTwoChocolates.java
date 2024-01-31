@@ -1,7 +1,7 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/buy-two-chocolates/
 
-class Solution {
+class BuyTwoChocolates {
     public int buyChoco(int[] arr, int key) {
 
         int ans = Integer.MAX_VALUE;
