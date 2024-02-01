@@ -1,7 +1,11 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/valid-anagram/
 
-class Solution {
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+class ValidAnagram {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
@@ -26,7 +30,7 @@ class Solution {
 }
 
 
-class Solution {
+class ValidAnagram2 {
     public boolean isAnagram(String s, String t) {
         
         char[] ch = new char[26];
@@ -48,7 +52,7 @@ class Solution {
     }
 }
 
-class Solution {
+class ValidAnagram3 {
     public boolean isAnagram(String s, String t) {
         char[] sArray=s.toCharArray();
         char[] tArray=t.toCharArray();

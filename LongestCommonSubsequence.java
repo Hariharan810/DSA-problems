@@ -1,7 +1,7 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/longest-common-subsequence/?envType=daily-question&envId=2024-01-25
 
-class Solution {
+class LongestCommonSubsequence {
     public int longestCommonSubsequence(String text1, String text2) {
         
         int[][] dp =new int[text1.length()+1][text2.length()+1]; 

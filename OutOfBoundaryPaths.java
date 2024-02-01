@@ -1,7 +1,10 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/out-of-boundary-paths/?envType=daily-question&envId=2024-01-26
 
-class Solution {
+import java.util.Arrays;
+
+class OutOfBoundaryPaths
+{
     private static final int MOD = 1000000007;
 
     public int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {

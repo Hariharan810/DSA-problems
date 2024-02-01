@@ -1,7 +1,10 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/isomorphic-strings/
 
-class Solution {
+import java.util.HashMap;
+import java.util.Map;
+
+class IsomorphicStrings {
     public boolean isIsomorphic(String s, String t) {
 
         if(s.length()!=t.length()){

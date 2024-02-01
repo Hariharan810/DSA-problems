@@ -1,7 +1,7 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/
 
-class Solution {
+class MaximumNestingDepthOfTheParentheses {
     public int maxDepth(String s) {
         
         int ans=0;

@@ -1,7 +1,7 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/find-a-peak-element-ii/
 
-class Solution {
+class FindAPeakElementII {
     public int[] findPeakGrid(int[][] mat) {
         
         int ans[] = {-1,-1};

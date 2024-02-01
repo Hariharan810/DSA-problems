@@ -1,7 +1,7 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/roman-to-integer/
 
-class Solution {
+class RomanToInteger {
     public int romanToInt(String s) {
         
         int sum=0;

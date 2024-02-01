@@ -1,7 +1,7 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/sort-characters-by-frequency/
 
-class Solution {
+class SortCharactersByFrequency {
     private static int MAX_AVAILABLE_CHAR = 123;
  
     public String frequencySort(String s) {

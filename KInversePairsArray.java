@@ -1,7 +1,7 @@
 //LeetCode
 //Problem Link : https://leetcode.com/problems/k-inverse-pairs-array/?envType=daily-question&envId=2024-01-27
 
-class Solution {
+class KInversePairsArray {
     private static Integer[][] dp = new Integer[1001][1001];
 
     public int kInversePairs(int n, int k) {

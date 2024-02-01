@@ -1,7 +1,7 @@
 //Coding Ninjas
 //Problem Link : https://www.codingninjas.com/studio/problems/median-of-a-row-wise-sorted-matrix_1115473
 
-public final class Solution {
+public final class MedianInARowWiseSortedMatrix {
     public static int upperBound(int arr[], int n, int x){
 
         int low=0;
