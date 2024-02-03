@@ -1,10 +1,10 @@
-Coding Ninjas 
-Problem Link : https://www.codingninjas.com/studio/problems/ceiling-in-a-sorted-array_1825401
+//Coding Ninjas
+//Problem Link : https://www.codingninjas.com/studio/problems/ceiling-in-a-sorted-array_1825401
 
 import java.util.* ;
 import java.io.*; 
 
-public class ThreeSumCloset {
+public class CeilTheFloor {
     public static int[] getFloorAndCeil(int[] a, int n, int x) {
       // Wriute your code here.
       int f=floor(a,n,x);

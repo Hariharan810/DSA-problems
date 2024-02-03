@@ -1,7 +1,7 @@
-LeetCode
-Problem Link : https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+//LeetCode
+//Problem Link : https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 
-class ThreeSumCloset {
+class CapacityToShipPackagesWithinDDays {
     public int shipWithinDays(int[] weights, int days) {
         
         int start=Integer.MIN_VALUE;

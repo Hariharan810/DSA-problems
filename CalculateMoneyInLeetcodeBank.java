@@ -1,4 +1,8 @@
-public class ThreeSumCloset {
+
+// LeetCode
+//Problem Link : https://leetcode.com/problems/calculate-money-in-leetcode-bank/description/
+
+public class CalculateMoneyInLeetcodeBank {
     public int solve(int week) {
         int result = 0;
         for (int i = 0; i < week; i++) {

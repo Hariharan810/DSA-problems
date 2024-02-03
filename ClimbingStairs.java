@@ -1,7 +1,7 @@
-LeetCode
-Problem Link : https://leetcode.com/problems/climbing-stairs/
+//LeetCode
+//Problem Link : https://leetcode.com/problems/climbing-stairs/
 
-class ThreeSumCloset {
+class ClimbingStairs {
     public int climbStairs(int n) {
         
         if(n==1) return 1;

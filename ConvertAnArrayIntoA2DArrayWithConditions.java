@@ -1,8 +1,13 @@
-LeetCode Link : https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/
+//LeetCode Link : https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/
 
-class ThreeSumCloset {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+class ConvertAnArrayIntoA2DArrayWithConditions {
     public List<List<Integer>> findMatrix(int[] nums) {
-        HashMap <Integer,Integer> map = new HashMap<>();
+        HashMap<Integer,Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             map.put(nums[i],map.getOrDefault(nums[i],0)+1);
         }

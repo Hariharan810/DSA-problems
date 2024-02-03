@@ -1,4 +1,11 @@
-class ThreeSumCloset {
+
+// LeetCode
+// Probelm Link : https://leetcode.com/problems/combination-sum/
+
+import java.util.ArrayList;
+import java.util.List;
+
+class CombinationSum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> list = new ArrayList<>();
         List<Integer> tempList =new ArrayList<>();
