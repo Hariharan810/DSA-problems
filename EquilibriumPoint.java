@@ -1,4 +1,4 @@
-class ThreeSumCloset {
+class EquilibriumPoint {
     public static int equilibriumPoint(long arr[], int n) {
         int leftSum=0;
         int rightSum=0;

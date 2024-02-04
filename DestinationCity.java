@@ -1,6 +1,16 @@
-class ThreeSumCloset {
+
+// LeetCode
+// Problem Link : https://leetcode.com/problems/destination-city/
+
+
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+class DestinationCity {
     public String destCity(List<List<String>> paths) {
-        Set<String> cities = new HashSet<>(); 
+        Set<String> cities = new HashSet<>();
         for (List<String> path : paths) {
             cities.add(path.get(0)); 
         }

@@ -1,7 +1,15 @@
-class FoodRatings {
+
+// LeetCode
+// Problem Link : https://leetcode.com/problems/design-a-food-rating-system/
+
+
+import java.util.HashMap;
+import java.util.TreeSet;
+
+class DesignAFoodRatingSystem {
     HashMap<String, TreeSet<Food>> hm;
     HashMap<String, Food> cat;
-    public FoodRatings(String[] foods, String[] cuisines, int[] ratings) {
+    public DesignAFoodRatingSystem(String[] foods, String[] cuisines, int[] ratings) {
         hm = new HashMap<>();
         cat = new HashMap<>();
         for(int i = 0; i < foods.length; i++){

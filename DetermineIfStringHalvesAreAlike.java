@@ -1,7 +1,11 @@
-LeetCode
-Problem Link : https://leetcode.com/problems/determine-if-string-halves-are-alike/
 
-public class ThreeSumCloset {
+// LeetCode
+// Problem Link : https://leetcode.com/problems/determine-if-string-halves-are-alike/
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class DetermineIfStringHalvesAreAlike {
     public boolean halvesAreAlike(String s) {
         Set<Character> vowels = new HashSet<>();
         vowels.add('a'); 

@@ -1,4 +1,12 @@
-class ThreeSumCloset {
+
+// LeetCode
+// Problem Link : https://leetcode.com/problems/decode-ways/
+
+
+
+import java.util.Arrays;
+
+class DecodeWays {
     public int numDecodings(String s) {
         int n=s.length();
         int[] dp=new int[n];
