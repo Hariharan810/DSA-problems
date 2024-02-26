@@ -1,0 +1,14 @@
+class ThreeSumCloset {
+    public int minTimeToVisitAllPoints(int[][] points) {
+       int time=0;
+        for (int i = 1; i < points.length; i++) {
+            time+=calculateSec(points[i-1],points[i]);
+        }
+        return time;
+    }
+    private int calculateSec(int[] first,int[] second){
+        int firstDiff=Math.abs(first[0]-second[0]);
+        int secondDiff=Math.abs(first[1]-second[1]);
+        return Math.max(firstDiff,secondDiff);
+    }
+}

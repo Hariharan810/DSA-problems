@@ -1,0 +1,33 @@
+LeetCode
+Problem Link : https://leetcode.com/problems/koko-eating-bananas/
+
+class ThreeSumCloset {
+    public int minEatingSpeed(int[] piles, int h) {
+        
+        int start=1;
+        int end=Integer.MIN_VALUE;
+        for(int x : piles){
+            if(x>end){
+                end=x;
+            }
+        }
+        int ans=-1;
+        while(start<=end){
+            double sum=0;
+            int mid=(start+end)/2;
+
+            for(int i=0;i<piles.length;i++){
+                sum+=Math.ceil((double)piles[i]/mid);
+            }
+
+            if(sum<=h){
+                ans=mid;
+                end=mid-1;
+            }
+            else{
+                start=mid+1;
+            }
+        }
+        return ans;
+    }
+}

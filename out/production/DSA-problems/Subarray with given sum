@@ -1,0 +1,32 @@
+class ThreeSumCloset
+{
+    static ArrayList<Integer> subarraySum(int[] arr, int n, int s) 
+    {
+        int i=0;
+        int j=0;
+        int sum=arr[0];
+        ArrayList<Integer> al=new ArrayList<>();
+        
+        while(j<n){
+
+            if(sum==s){
+                al.add(i+1);
+                al.add(j+1);
+                return al;
+            }
+            
+            if(sum<s){
+                j++;
+                sum+=arr[j];
+                continue;
+            }
+            if(sum>s){
+                sum-=arr[i];
+                i++;
+                continue;
+            }
+        }
+        al.add(-1);
+        return al;
+    }
+}

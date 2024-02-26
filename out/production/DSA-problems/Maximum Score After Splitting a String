@@ -1,0 +1,28 @@
+class ThreeSumCloset {
+    public int maxScore(String s) {
+        int max=Integer.MIN_VALUE;
+        for (int i = 1; i < s.length(); i++) {
+            String left=s.substring(0,i);
+            char[] leftArr=left.toCharArray(); 
+
+            String right=s.substring(i,s.length());
+            char[] rightArr=right.toCharArray();
+
+            int leftcount=count(leftArr,'0');
+            int rightcount=count(rightArr,'1');
+            
+            int sum=leftcount+rightcount;
+            max=Math.max(sum,max);
+        }
+        return max;
+    }
+    public int count(char[] arr,char val){
+        int count=0;
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]==val){
+                count++;
+            }
+        }
+        return count;
+    }
+}

@@ -1,0 +1,19 @@
+LeetCode
+Problem Link : https://leetcode.com/problems/max-consecutive-ones/
+
+class ThreeSumCloset {
+    public int findMaxConsecutiveOnes(int[] nums) {
+        int count=0;
+        int temp=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==1){
+                count++;
+            }
+            else{
+                count=0;
+            }
+            temp=Math.max(count,temp);
+        }
+        return temp;
+    }
+}

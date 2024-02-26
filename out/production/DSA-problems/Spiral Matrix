@@ -1,0 +1,43 @@
+Leetcode
+Peoblem Link : https://leetcode.com/problems/spiral-matrix/
+
+class ThreeSumCloset {
+    public List<Integer> spiralOrder(int[][] matrix) {
+        int m=matrix.length;
+        int n=matrix[0].length;
+
+        int right=n-1;
+        int left=0;
+        int top=0;
+        int buttom=m-1;
+
+        List<Integer> list = new ArrayList<>();
+        while(top<=buttom && left<=right){
+            // right
+            for(int i=left;i<=right;i++){
+                list.add(matrix[top][i]);
+            }
+            top++;
+            //buttom
+            for(int i=top;i<=buttom;i++){
+                list.add(matrix[i][right]);
+            }
+            right--;
+            //left
+            if(top<=buttom){
+                for(int i=right;i>=left;i--){
+                    list.add(matrix[buttom][i]);
+                }
+                buttom--;
+            }
+            //top
+            if(left<=right){
+                for(int i=buttom;i>=top;i--){
+                    list.add(matrix[i][left]);
+                }
+            left++;
+            }
+        }
+        return list;
+    }
+}
