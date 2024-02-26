@@ -41,7 +41,7 @@ public class AllocateBooks {
                 noOfStudents++;
                 pages=arr.get(i);
             }
-        }
+        }               
         return noOfStudents;
     }
 }
