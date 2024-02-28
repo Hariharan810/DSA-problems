@@ -12,7 +12,6 @@ public class AsteroidCollision {
 
         Stack<Integer> stack = new Stack<>();
 
-
         for(int i=0;i<n;i++){
 
             if(asteroids[i]>0 || stack.isEmpty()){
