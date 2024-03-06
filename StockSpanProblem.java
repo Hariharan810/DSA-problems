@@ -24,4 +24,5 @@ public class StockSpanProblem {
         }
         return result;
     }
+
 }
