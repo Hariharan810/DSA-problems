@@ -11,7 +11,7 @@ public class StockSpanProblem {
         int[] result = new int[n];
 
         for(int i=0;i<n;i++){
-            while(!stack.isEmpty() && price[i]>=price[stack.peek()]){
+            while(!stack.isEmpty() && price[stack.peek()]<=price[i]){
                 stack.pop();
             }
             if(stack.isEmpty()){
