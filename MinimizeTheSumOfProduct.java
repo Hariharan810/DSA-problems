@@ -1,5 +1,5 @@
 
-// LeetCode: https://leetcode.com/problems/minimize-the-sum-of-product/
+// GFG: https://leetcode.com/problems/minimize-the-sum-of-product/
 
 
 import java.util.Arrays;
