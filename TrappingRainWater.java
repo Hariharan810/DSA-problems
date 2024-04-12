@@ -1,7 +1,6 @@
 
 
-// LeetCode
-// Problem Link : https://leetcode.com/problems/trapping-rain-water/description/
+// LeetCode  : https://leetcode.com/problems/trapping-rain-water/description/
 
 
 public class TrappingRainWater {
