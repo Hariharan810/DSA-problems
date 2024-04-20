@@ -1,5 +1,5 @@
 
-// LeetCode : https://practice.geeksforgeeks.org/problems/find-triplets-with-zero-sum/1
+// GFG : https://practice.geeksforgeeks.org/problems/find-triplets-with-zero-sum/1
 
 
 import java.util.Arrays;
