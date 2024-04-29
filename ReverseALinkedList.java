@@ -20,6 +20,7 @@ public class ReverseALinkedList {
         return prev;
     }
     class Node {
+        private final int value;
         int data;
         Node next;
         Node(int value) {
