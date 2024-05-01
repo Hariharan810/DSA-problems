@@ -42,4 +42,5 @@ public class CheckIfLinkedListIsPalindrome {
             data = d;
             next = null;
         }
+    }
 }
