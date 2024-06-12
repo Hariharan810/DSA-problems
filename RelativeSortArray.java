@@ -10,6 +10,7 @@ public class RelativeSortArray {
         }
         int[] ans=new int[arr1.length];
         int i=0;
+
         for(int n:arr2){
             while(cnt[n]>0){
                 ans[i]=n;
