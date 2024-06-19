@@ -1,7 +1,8 @@
-LeetCode
-Problem Link : https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/
 
-class ThreeSumCloset {
+// LeetCode : https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/
+
+
+class MinimumNumberOfDaysToMakeMBouquets {
     public int minDays(int[] bloomDay, int m, int k) {
         int n=bloomDay.length;
         long val=(long)m*k;
