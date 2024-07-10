@@ -5,6 +5,7 @@
 public class CrawlerLogFolder {
     public int minOperations(String[] logs) {
 
+
         int result = 0;
 
         for(String log:logs){
