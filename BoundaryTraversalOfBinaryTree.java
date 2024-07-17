@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BoundaryTraversalOfBinaryTree {
-    public List<Integer> boundaryOfBinaryTree(Demo.TreeNode root) {
+    public List<Integer> boundaryOfBinaryTree(TreeNode root) {
 
         ArrayList<Integer> result = new ArrayList<>();
 
@@ -17,8 +17,8 @@ public class BoundaryTraversalOfBinaryTree {
         return result;
     }
 
-    public static void addLeftBoundary(Demo.TreeNode node, ArrayList<Integer> result){
-        Demo.TreeNode cur = node.left;
+    public static void addLeftBoundary(TreeNode node, ArrayList<Integer> result){
+        TreeNode cur = node.left;
 
         while (cur != null){
             if(isLeaf(cur) == false)result.add(cur.val);
@@ -27,7 +27,7 @@ public class BoundaryTraversalOfBinaryTree {
         }
     }
 
-    public static void addLeaves(Demo.TreeNode node, ArrayList<Integer> result){
+    public static void addLeaves(TreeNode node, ArrayList<Integer> result){
         if(isLeaf(node)){
             result.add(node.val);
             return;
@@ -36,8 +36,8 @@ public class BoundaryTraversalOfBinaryTree {
         if(node.right != null)addLeaves(node.right, result);
     }
 
-    public static void addRightBoundary(Demo.TreeNode node, ArrayList<Integer> result){
-        Demo.TreeNode cur = node.right;
+    public static void addRightBoundary(TreeNode node, ArrayList<Integer> result){
+        TreeNode cur = node.right;
         ArrayList<Integer> temp = new ArrayList<>();
         while (cur != null){
             if(isLeaf(cur) == false)temp.add(cur.val);
@@ -49,17 +49,17 @@ public class BoundaryTraversalOfBinaryTree {
         }
     }
 
-    public static boolean isLeaf(Demo.TreeNode node){
+    public static boolean isLeaf(TreeNode node){
         return node.left == null && node.right == null;
     }
 
     public class TreeNode {
         int val;
-        Demo.TreeNode left;
-        Demo.TreeNode right;
+        TreeNode left;
+        TreeNode right;
         TreeNode() {}
         TreeNode(int val) { this.val = val; }
-        TreeNode(int val, Demo.TreeNode left, Demo.TreeNode right) {
+        TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
             this.right = right;
