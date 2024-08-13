@@ -9,32 +9,33 @@ import java.util.List;
 
 class CombinationSumII {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        List<List<Integer>> list = new ArrayList<>();
-        List<Integer> tempList =new ArrayList<>();
+
+        List<List<Integer>> result = new ArrayList<>();
+
         Arrays.sort(candidates);
 
-        recursive(candidates,target,list,tempList,0);
-        return list;
-    }
-    public static void recursive(int[] nums,int target,List<List<Integer>> list,
-                                 List<Integer> tempList,int index){
+        findCombinations(0,candidates,target,result,new ArrayList<>());
 
-        if(target==0){
-            list.add(new ArrayList<>(tempList));
+        return result;
+
+    }
+
+    static void findCombinations(int ind,int[] arr,int target,List<List<Integer>>
+            result, List<Integer> list) {
+
+        if(target == 0){
+            result.add(new ArrayList<>(list));
             return;
         }
 
-        for (int i = index; i < nums.length; i++) {
-            if(i>index && nums[i]==nums[i-1]){
-                continue;
-            }
-            if(nums[i]>target){
-                break;
-            }
+        for(int i=ind;i<arr.length;i++){
+            if(i > ind && arr[i] == arr[i-1]) continue;
+            if(arr[i] > target) break;
 
-            tempList.add(nums[i]);
-            recursive(nums,target-nums[i],list,tempList,i+1);
-            tempList.remove(tempList.size()-1);
+            list.add(arr[i]);
+            findCombinations(i+1,arr,target-arr[i],result,list);
+            list.remove(list.size()-1);
         }
+
     }
 }
