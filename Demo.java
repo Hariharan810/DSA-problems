@@ -1,20 +1,42 @@
 import java.util.*;
-import java.util.Stack;
 
 public class Demo {
     public static void main(String[] args) {
-        int[] nums = {12,6,1,2,7};
 
-        long score = 0;
-        int[] maxLeft = new int[nums.length], maxRight = new int[nums.length];;
-        maxLeft[0] = nums[0];
-        maxRight[nums.length-1] = nums[nums.length-1];
-        for(int i=1; i<nums.length; i++) maxLeft[i] = Math.max(maxLeft[i-1], nums[i]);
-        for(int i=nums.length-2; i>=0; i--)   maxRight[i] = Math.max(maxRight[i+1], nums[i]);
-        for (int i=1; i<nums.length-1; i++) {
-            long currScore = (long)(maxLeft[i-1]-nums[i])*maxRight[i+1];
-            score = Math.max(score, currScore);
+        String arr[] = {"d","b","c","b","c","a"};
+
+        int k = 2;
+
+        Map<String,Integer> map = new HashMap<>();
+
+        for(String str : arr){
+            map.put(str,map.getOrDefault(str,0)+1);
         }
-        System.out.println(score);
+
+        int count = 0;
+        String result = "";
+        for(Map.Entry<String, Integer> entry : map.entrySet()){
+
+            int value = entry.getValue();
+
+            if(value == 1){
+                count++;
+            }
+            if(count == k){
+                result += entry.getKey();
+            }
+        }
+
+        if(count >= k) {
+            System.out.println(result);
+        }
+        else {
+            System.out.println("");
+        }
+
+//        return (count >= k) ? result : "" ;
     }
+
 }
+
+

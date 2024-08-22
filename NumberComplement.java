@@ -13,6 +13,8 @@ public class NumberComplement {
             else{
                 res += '0';
             }
+
+
         }
         return Integer.parseInt(res,2);
     }
