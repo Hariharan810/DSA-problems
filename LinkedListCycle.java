@@ -23,6 +23,7 @@ public class LinkedListCycle {
 
     }
 
+
     class ListNode {
      int val;
       ListNode next;
